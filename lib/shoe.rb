@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
         BRANDS << brand
         brand.deleteif BRANDS.include?(brand)
-          
+
         end
   end
 
