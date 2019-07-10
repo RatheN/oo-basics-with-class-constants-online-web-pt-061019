@@ -7,8 +7,8 @@ class Shoe
   def initialize(brand)
     @brand = brand
         BRANDS << brand
-        if BRANDS.include?(brand)
-          brand.delete
+        brand.deleteif BRANDS.include?(brand)
+          
         end
   end
 
