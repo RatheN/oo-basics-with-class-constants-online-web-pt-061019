@@ -6,7 +6,11 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    brand.each do |brand1, brand2|
+      if brand1 != brand2
+        BRANDS << brand
+      end
+    end
   end
 
   def cobble
